@@ -1,0 +1,13 @@
+image: gitpod/workspace-full
+tasks:
+    - name: Start Docker Compose
+      command: make start
+
+ports:
+  - port: 8888
+    visibility: private
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-python.python

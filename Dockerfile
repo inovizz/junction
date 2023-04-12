@@ -21,7 +21,6 @@ COPY . /code/
 # not getting used at this moment
 RUN chmod +x wait-for-it.sh
 
-ENV DJANGO_SETTINGS_MODULE=settings.dev
 ENV PYTHONUNBUFFERED=1
 
 EXPOSE 8888
